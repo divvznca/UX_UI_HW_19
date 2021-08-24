@@ -20,35 +20,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
 </head>
 
 <body>
+
+
     <nav>
         <ul>
             <img class="logo" src="./images/Logo.png">
             <li><a href="#downloadcv">Download CV</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
 
-    <div class='heroimg'>
-        <div class="content">
-            <h1>ABOUT ME</h1>
-            <h2>Hi there!!! <br>
-                I'm Divya Chakravarthy, <br>
-                a UX designer</h2>
-            <p>Identifying innovative approaches and improved <br>
-                solutions to business challenges both <br>
-                motivates and drives me. <br>
-                I believe in Human centric designs
-            </p><br>
 
-            <button>GET IN TOUCH</button>
-        </div>
+
+    <div class='heroimg'>
+        <script src="https://rawgit.com/Ashish-Bansal/jquery-typewriter/master/jquery.typewriter.js" defer=""></script>
+        <div class="content"></div>
+        <h1>Hi there!!! <br>
+            I'm Divya Chakravarthy</h1>
+        <h1 id="typewriter"></h1>
+        <p>Identifying innovative approaches and improved <br>
+            solutions to business challenges both <br>
+            motivates and drives me. <br>
+            I believe in Human centric designs
+        </p><br>
+        <button class="button button1">Get In Touch</button>
+    </div>
     </div>
 
     <!--Skills Grid with responsive text overlay-->
@@ -91,7 +99,8 @@
 
     <section>
         <div class="grid-flex">
-            <div class="col col-image" style="background-image: url(./images/Designs/Trip\ –\ 1.png);">
+            <div class="col col-image" style="background-image: url(./images/Designs/Trip\ –\ 1.png);"
+                data-aos="zoom-in-left" data-aos-duration="10000">
             </div>
             <div class="col col-text">
                 <div class="Aligner-item">
@@ -104,13 +113,14 @@
                         travel
                         expert support at
                         the destination to make the complete travel experience unforgettable</p>
-                    <button class='but3'>READ MORE</button>
+                    <button class="button button2">Read More</button>
                 </div>
             </div>
         </div>
 
         <div class="grid-flex">
-            <div class="col col-image" style="background-image: url(./images/Designs/Binge\ –\ 2.png);">
+            <div class="col col-image" style="background-image: url(./images/Designs/Binge\ –\ 2.png);"
+                data-aos="zoom-in-right" data-aos-duration="10000">
                 &nbsp;
             </div>
             <div class="col col-text col-left">
@@ -127,13 +137,14 @@
                         out to
                         the movies,
                         bring the movie theatre home and watch with friends</p>
-                    <button class='but1'>READ MORE</button>
+                    <button class="button button2">Read More</button>
                 </div>
             </div>
         </div>
 
         <div class="grid-flex">
-            <div class="col col-image" style="background-image: url(./images/Designs/CSA\ –\ 1.png);">
+            <div class="col col-image" style="background-image: url(./images/Designs/CSA\ –\ 1.png);"
+                data-aos="zoom-in-left" data-aos-duration="10000">
                 &nbsp;
             </div>
             <div class="col col-text">
@@ -148,7 +159,7 @@
                         of information on the website. The task there involved identifying areas of improvement and
                         redesigning
                         to create a great user experience</p>
-                    <button class='but2'>READ MORE</button>
+                    <button class="button button2">Read More</button>
                 </div>
             </div>
         </div>
@@ -295,6 +306,12 @@
             </div>
 
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
 </body>
 
 </html>

@@ -1,9 +1,32 @@
 nav {
 font-size: 1.2rem;
-background-color: #F24C27;
+background-color: #f24c27;
+transition: .3s;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+width: 100%;
+box-sizing: border-box;
+
+
+}
+
+nav.blue {
+  background:#f24c27;
+  opacity: 80%;
+
+
+  
+
 }
 .logo{
     width: 50px;
+    transition: .3s;
+}
+
+nav.blue .logo{
+ width: 50px; 
 }
 /* Flex Container */
 
@@ -24,13 +47,31 @@ nav ul li {
   text-align: center;
 }
 
+/*
 nav ul li:hover {
  background-color: #F2B705;
 }
+*/
 
-a{
+nav ul li a{
 text-decoration-line: none;
 color: #ffffff;
+transition: .3s;
+}
+
+nav.blue ul li a{
+  color: #fff;
+}
+
+nav ul li a:focus{
+  outline: none;
+}
+
+nav ul li a.active{
+  background: #F2B705;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 10px 12px 10px;
 }
 
 /* Responsive Nav Bar */
@@ -49,7 +90,7 @@ nav .logo{
 /*heroimg section*/
 
 .heroimg{
-    margin-top: 20px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
 min-height: 15em;    
@@ -59,19 +100,18 @@ background-repeat: no-repeat;
 background-size: cover;
 align-items: flex-end;
 justify-content:flex-start;
-background-image: url("https://i.imgur.com/t8gbdNe.png");
-   
+background-image: url("/UX_UI_HW_19/images/doggie.png");
 }
 
 
-.content h1{
+h1{
     text-align: center;
     position: relative;
-    padding-top: 10%;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 40px;
     color: #ffffff;
+    padding-right: 80px;
 }
 
 .content h2{
@@ -94,8 +134,9 @@ p{
     color: #ffffff;
     
 }
-button{
-    margin-left: 35%;
+
+.button1{
+    margin-right: 220px;
     background-color: #F24C27;
     border-width: 3px;
     border-color: #F24C27;
@@ -115,6 +156,23 @@ button:hover
     transition:.3s;   
 }
 
+#typewriter-prefix {
+text-align: left;
+ color: #F24C27;
+}
+
+#typewriter-suffix {
+  color: white;
+}
+
+#typewriter-text {
+  color: #000000;
+}
+
+#typewriter-prefix, #typewriter-text{
+  font-weight: 400;
+}
+
 /* Responsive hero image */
 
 @media all and (max-width: 600px) {
@@ -129,17 +187,19 @@ background-repeat: no-repeat;
 background-size: cover;
 align-items: center;
 justify-content: flex-start;
-background-image: url("https://i.imgur.com/t8gbdNe.png");
+background-image: url("/UX_UI_HW_19/images/doggie.png");
 background-position-x: center;
 }
 
-.content h1{
+h1{
+  padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
     position: relative;
     padding-top: 5%;
     font-family: 'Poppins', sans-serif;;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .content h2{
@@ -153,19 +213,19 @@ font-size: 20px;
 p{
   text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 15px;
-font-size: 15px;
+    line-height: 17px;
+font-size: 18px;
     align-content: center;
     padding-left: 10%;
     padding-right: 10%;
     
 }
 
-button{
-  margin-left: 30%;
+.button1{
+  margin-right: 5%;
     background-color: #F24C27;
     border-width: 3px;
-    border-color: #000000;
+    border-color: #F24C27;
 border-radius: 5px;
     padding:10px 20px 10px 20px;
     font-weight: bold;  
@@ -331,6 +391,17 @@ h3{
   background-position:center center;
 }
 
+.button2{
+    margin-left: 35%;
+    background-color: #F24C27;
+    border-width: 3px;
+    border-color: #F24C27;
+border-radius: 5px;
+    padding:10px 30px 10px 30px;
+    font-weight: bold;  
+    color: #ffffff;
+}
+
 @media (max-width: 640px) {
   .grid-flex {
     height: 40em;
@@ -366,6 +437,18 @@ h3{
   .Aligner-item {
     width: 90%;
   }
+
+  .button2{
+    margin-right: 20%;
+    margin-left: 30%;
+    background-color: #F24C27;
+    border-width: 3px;
+    border-color: #F24C27;
+
+    padding:10px 30px 10px 30px;
+    font-weight: bold;  
+    color: #ffffff;
+}
 }
 
 h4{
