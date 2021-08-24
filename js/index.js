@@ -11,12 +11,22 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
 
-$(window).on("scroll", function () {
-    if ($(window).scrollTop()) {
-        $("nav").addClass("blue");
-    }
-    else {
-        $("nav").removeClass("blue");
-    }
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 40) {
+            $('.button3').fadeIn();
+        } else {
+            $('.button3').fadeOut();
+        }
+    });
+
+    $(".button3").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 800);
+    });
 });
+
+$(window).scroll(function () {
+    parallax();
+})
+
