@@ -76,6 +76,19 @@ nav ul li a.active{
 
 /* Responsive Nav Bar */
 @media all and (max-width: 600px) {
+  nav {
+font-size: 1.2rem;
+background-color: #F24C27;
+position: static;
+}
+
+nav ul li a.active{
+  background: #F2B705;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+}
+
 nav ul {
 flex-direction: column;
 }
