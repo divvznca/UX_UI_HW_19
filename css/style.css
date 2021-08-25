@@ -205,6 +205,7 @@ align-items: center;
 justify-content: flex-start;
 background-image: url("/UX_UI_HW_19/images/doggie.png");
 background-position-x: center;
+background-attachment: scroll;
 }
 
 h1{
